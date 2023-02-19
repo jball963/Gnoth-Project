@@ -11699,10 +11699,11 @@ body {
   padding: 5rem 0;
 }
 
-//code we added
+/*code we added*/
 
 
 img{
+  width:615px;
+  height:auto;
   object-fit: cover;
-  
 }
