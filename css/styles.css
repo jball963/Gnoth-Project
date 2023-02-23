@@ -11708,9 +11708,13 @@ img{
   object-fit: cover;
 }
 
+ul{
+  list-style-type:none;
+  padding-left: 0;
+}
+
 input[type=text]{
   border: none;
   border-bottom: 2px solid white;
   background-color: transparent;
 }
-
