@@ -11717,4 +11717,26 @@ input[type=text]{
   border: none;
   border-bottom: 2px solid white;
   background-color: transparent;
+  width: 500px;
+  padding-bottom: 1rem;
+  color: white;
 }
+<<<<<<< Updated upstream
+=======
+
+.form-color{
+  background-color: black;
+  color: white;
+}
+
+.projects{
+  background-color: lightgrey;
+  padding: 1rem;
+}
+
+.clubform{
+  align-self: center;
+  max-width: 600px;
+  margin: 1rem auto;
+}
+>>>>>>> Stashed changes
