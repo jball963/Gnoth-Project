@@ -11721,8 +11721,6 @@ input[type=text]{
   padding-bottom: 1rem;
   color: white;
 }
-<<<<<<< Updated upstream
-=======
 
 .form-color{
   background-color: black;
@@ -11731,7 +11729,7 @@ input[type=text]{
 
 .projects{
   background-color: lightgrey;
-  padding: 1rem;
+  padding: 3rem;
 }
 
 .clubform{
@@ -11739,4 +11737,3 @@ input[type=text]{
   max-width: 600px;
   margin: 1rem auto;
 }
->>>>>>> Stashed changes
