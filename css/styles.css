@@ -11707,3 +11707,8 @@ img{
   height:auto;
   object-fit: cover;
 }
+
+ul{
+  list-style-type:none;
+  padding-left: 0;
+}
