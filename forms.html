@@ -42,8 +42,8 @@
                     <div class="text-center">
                         <h1 class="mx-auto my-0 text-uppercase">Forms</h1>
                         <a class="btn btn-primary" href="#tracker-sheet">Tracker Sheet</a>
-                        <a class="btn btn-primary" href="#fundraising">Fundraising</a>
-                        <a class="btn btn-primary" href="#check-request-form">Check Request Form</a>
+                        <a class="btn btn-primary" href="forms-funds.html #fundraising">Fundraising</a>
+                        <a class="btn btn-primary" href="forms-check.html #checkReq">Check Request Form</a>
                     </div>
                 </div>
             </div>
@@ -54,18 +54,38 @@
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8">
                         <h2 class="text-white mb-4">Meeting/Event Tracker Sheet</h2>
-                        <form action="process.html" method="get">
+                        <form action="send-email.php" method="get">
                             <div class="form__row">
                                 <div class="form__row-cell-1"><label class="text-white" for="input-orgName">Name of student organization: </label></div>
-                                <div class="form__row-cell-2"><input type="text" name="organization_name" id="input-orgName"></div>
+                                <div class="form__row-cell-2"><select class="" type="text" name="organization_name" id="input-orgName">
+                                    <option value="ASHRAE">ASHRAE</option>
+                                    <option value="Anime">Anime</option>
+                                    <option value="ASTA">ASTA</option>
+                                    <option value="ASME">ASME</option>
+                                    <option value="Creative Writing Club">Creative Writing Club</option>
+                                    <option value="Criminal Justice Club">Criminal Justice Club</option>
+                                    <option value="CyberSecurity Club">CyberSecurity Club</option>
+                                    <option value="Culinary Club">Culinary Club</option>
+                                    <option value="DECA">DECA</option>
+                                    <option value="Drama Club">Drama Club</option>
+                                    <option value="Film Club">Film Club</option>
+                                    <option value="Dungeons and Dragons">Dungeons and Dragons</option>
+                                    <option value="Gaming Club">Gaming Club</option>
+                                    <option value="Gay Straight Alliance (GSA)">Gay Straight Alliance (GSA)</option>
+                                    <option value="Magic Club (The Gathering)">Magic Club (The Gathering)</option>
+                                    <option value="IT Research Certification Club">IT Research Certification Club</option>
+                                    <option value="Recharge">Recharge</option>
+                                    <option value="Software Development Club">Software Development Club</option>
+                                    <option value="Women in STEAM">Women in STEAM</option>
+                                </select></div>
                             </div>
                             <div class="form__row">
-                                <div class="form__row-cell-1"><label class="text-white" for="input-rep">Name and Email of Student organization Representative: </label></div>
-                                <div class="form__row-cell-2"><input type="text" name="rep" id="input-rep"></div>
+                                <div class="form__row-cell-1"><label class="text-white" for="input-email">Email of Student organization Representative: </label></div>
+                                <div class="form__row-cell-2"><input type="text" name="rep" id="input-email"></div>
                             </div>
                             <div class="form__row">
                                 <div class="form__row-cell-1"><label class="text-white" for="input-date">Date/Time of Meeting/Event: </label></div>
-                                <div class="form__row-cell-2"><input type="text" name="date/time" id="input-date"></div>
+                                <div class="form__row-cell-2"><input class="calendar" type="date" name="date/time" id="input-date"></div>
                             </div>
                             <div class="form__row">
                                 <div class="form__row-cell-1"><label class="text-white" for="input-attend">Number of Attending members at Meeting/Event: </label></div>
@@ -86,91 +106,6 @@
                         </form>
                         <p></p>
                     </div>
-                </div>
-            </div>
-        </section>
-        <!-- Forms-->
-        <section class="projects-section bg-light">
-            <div class="container px-4 px-lg-5 projects">
-                <!-- Fundraising Form-->
-                <div class="row gx-0 mb-4 mb-lg-5 align-items-center clubform" id="fundraising">
-                        <div class="featured-text text-center text-lg-left form-color">
-                            <h4>Fundraising Request Form</h4>
-                            <form action="process.html" method="get">
-                                <div class="form__row">
-                                    <div class="form__row-cell-1"><label for="input-orgName">Name of student organization: </label></div>
-                                    <div class="form__row-cell-2"><input type="text" name="organization_name" id="input-orgName"></div>
-                                </div>
-                                <div class="form__row">
-                                    <div class="form__row-cell-1"><label for="input-contact">Contact person and email: </label></div>
-                                    <div class="form__row-cell-2"><input type="text" name="contact" id="input-contact"></div>
-                                </div>
-                                <div class="form__row">
-                                    <div class="form__row-cell-1"><label for="input-Pdate">Propsed dates of fundraiser: </label></div>
-                                    <div class="form__row-cell-2"><input type="text" name="Pdate" id="input-Pdate"></div>
-                                </div>
-                                <div class="form__row">
-                                    <div class="form__row-cell-1"><label for="input-description">Description of fundraiser: </label></div>
-                                    <div class="form__row-cell-2"><input type="text" name="description" id="input-description"></div>
-                                </div>
-                                <div class="form__row">
-                                    <div class="form__row-cell-1"><label for="input-Location">Location of fundraiser: </label></div>
-                                    <div class="form__row-cell-2"><input type="text" name="Location" id="input-Location"></div>
-                                </div>
-                                <div class="form__row">
-                                    <div class="form__row-cell-1"><label for="input-funds">What are the funds being raised for: </label></div>
-                                    <div class="form__row-cell-2"><input type="text" name="funds" id="input-funds"></div>
-                                </div>
-                                <div class="form__row">
-                                    <div class="form__row-cell-1"><label for="input-Signature">Advisor's electronic Signature: </label></div>
-                                    <div class="form__row-cell-2"><input type="text" name="Signature" id="input-Signature"></div>
-                                </div>
-                            </form>
-                        </div>
-                </div>
-                <!-- Fundraising Form-->
-                <div class="row gx-0 mb-4 mb-lg-5 align-items-center clubform" id="check-request-form">
-                        <div class="featured-text text-center text-lg-left form-color">
-                            <h4>Check Request Form</h4>
-                            <form action="process.html" method="get">
-                                <div class="form__row">
-                                    <div class="form__row-cell-1"><label for="input-payment">Request for payment to: </label></div>
-                                    <div class="form__row-cell-2"><input type="text" name="payment" id="input-payment"></div>
-                                </div>
-                                <div class="form__row">
-                                    <div class="form__row-cell-1"><label for="input-amount">Amount to be paid: </label></div>
-                                    <div class="form__row-cell-2"><input type="text" name="amount" id="input-amount"></div>
-                                </div>
-                                <div class="form__row">
-                                    <div class="form__row-cell-1"><label for="input-reason">Reason for request: </label></div>
-                                    <div class="form__row-cell-2"><input type="text" name="reason" id="input-reason"></div>
-                                </div>
-                                <div class="form__row">
-                                    <div class="form__row-cell-1"><label for="input-Individual">Individual requesting check: </label></div>
-                                    <div class="form__row-cell-2"><input type="text" name="Individual" id="input-Individual"></div>
-                                </div>
-                                <div class="form__row">
-                                    <div class="form__row-cell-1"><label for="input-Organization">Organization to be charged: </label></div>
-                                    <div class="form__row-cell-2"><input type="text" name="Organization" id="input-Organization"></div>
-                                </div>
-                                <div class="form__row">
-                                    <div class="form__row-cell-1"><label for="input-when">Indicate what date this check is needed: </label></div>
-                                    <div class="form__row-cell-2"><input type="text" name="when" id="input-when"></div>
-                                </div>
-                                <div class="form__row">
-                                    <div class="form__row-cell-1"><label for="input-Esig">Electronic signature for approval: </label></div>
-                                    <div class="form__row-cell-2"><input type="text" name="Esig" id="input-Esig"></div>
-                                </div>
-                                <div class="form__row">
-                                    <div class="form__row-cell-1"><label for="input-time">Date: </label></div>
-                                    <div class="form__row-cell-2"><input type="text" name="time" id="input-time"></div>
-                                </div>
-                                <div class="form__row">
-                                    <div class="form__row-cell-1"><label for="input-Comments">Comments: </label></div>
-                                    <div class="form__row-cell-2"><input type="text" name="Comments" id="input-Comments"></div>
-                                </div>
-                            </form>
-                        </div>
                 </div>
             </div>
         </section>

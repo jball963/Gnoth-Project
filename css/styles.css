@@ -11715,10 +11715,10 @@ ul{
 
 input[type=text]{
   border: none;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid lightslategray;
   background-color: transparent;
   width: 500px;
-  padding-bottom: 1rem;
+  margin-bottom: 1rem;
   color: white;
 }
 
@@ -11736,4 +11736,14 @@ input[type=text]{
   align-self: center;
   max-width: 600px;
   margin: 1rem auto;
+}
+
+select{
+  background-color: black;
+  color: white;
+}
+
+.calendar{
+  background-color: rgba(50,50,50,10);
+  color: white;
 }

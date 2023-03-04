@@ -52,3 +52,73 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+
+//our code for js//
+
+document.getElementById("input-orgName").addEventListener("change", function(){
+    var org = document.getElementById("input-orgName").value;
+    console.log(org);
+    var email = "";
+    switch(org){
+        case "ASHRAE":
+            email = "Lynch.Scott@ptcollege.edu";
+            break;
+        case "Anime":
+            email = "Cottrell.Lee@ptcollege.edu";
+            break;
+        case "ASTA":
+            email = "Bellemare.Mark@ptcollege.edu";
+            break;
+        case "ASME":
+            email = "Otteni.Nicholas@ptcollege.edu";
+            break;
+        case "Creative Writing Club":
+            email = "Dimperio.Cristina@ptcollege.edu";
+            break;
+        case "Criminal Justice Club":
+            email = "Wintruba.Shannon@ptcollege.edu";
+            break;
+        case "CyberSecurity Club":
+            email = "Russell.Michael@ptcollege.edu";
+            break;
+        case "Culinary Club":
+            email = "Russo.Dave@ptcollege.edu";
+            break;
+        case "DECA":
+            email = "Brady.Tracie@ptcollege.edu";
+            break;
+        case "Drama Club":
+            email = "Monigold.Amber@ptcollege.edu";
+            break;
+        case "Film Club":
+            email = "Zito.Lauren@ptcollege.edu";
+            break;
+        case "Dungeons and Dragons":
+            email = "Cottrell.Lee@ptcollege.edu";
+            break;
+        case "Gaming Club":
+            email = "Hertz.David@ptcollege.edu";
+            break;
+        case "Gay Straight Alliance (GSA)":
+            email = "McGarvey.Shane@ptcollege.edu";
+            break;
+        case "Magic Club (The Gathering)":
+            email = "Hertz.David@ptcollege.edu";
+            break;
+        case "IT Research Certification Club":
+            email = "Mutale.Wilfred@ptcollege.edu";
+            break;
+        case "Recharge":
+            email = "McDermott.Tom@ptcollege.edu";
+            break;
+        case "Software Development Club":
+            email = "Hertz.David@ptcollege.edu";
+            break;
+        case "Women in STEAM":
+            email = "Eltringham.Charles@ptcollege.edu";
+            break;
+
+    }
+    document.getElementById("input-email").value = email;
+});
