@@ -54,7 +54,7 @@
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8">
                         <h2 class="text-white mb-4">Meeting/Event Tracker Sheet</h2>
-                        <form action="" method="post">
+                        <form action="send-tracker.php" method="post">
                             <div class="form__row">
                                 <div class="form__row-cell-1"><label class="text-white" for="input-orgName">Name of student organization: </label></div>
                                 <div class="form__row-cell-2"><select class="" type="text" name="organization_name" id="input-orgName">
@@ -108,26 +108,6 @@
                             </div>
                         </form>
                         <p></p>
-                        <php
-
-                            if(isset($_POST['submit'])){
-                                $datetime = $_POST["date/time"];
-                                $attendees = $_POST["attendees"];
-                                $meetingCost = $_POST["meeting_cost"];
-                                $futureEvents = $_POST["future_events"];
-                                $organization_name = $_POST["organization_name"];
-                                $members = $_Post["current_members"];
-                                        
-                                $mailto = $_POST["rep"];
-
-                                $headers = "Club: ".$organization_name;
-                                $txt = "You have received a confirmation email for a club form.\n\nClub: ".$organization_name."\nCurrent Members: ".$members."\nAttendees: ".$attendees."\nDate and time: ".$datetime."\nMeeting Cost: ".$meetingCost."\nFuture Events: ".$futureEvents;
-
-                                mail($mailto, "form submission", $txt, $headers);
-                                header("Location: index.php?mailsend");
-                            }
-
-                        >
                     </div>
                 </div>
             </div>
