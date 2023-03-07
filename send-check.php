@@ -10,7 +10,7 @@
         $date = $_Post["date"];
         $Comments = $_Post["Comments"];
                 
-        $mailto = "josphball963@gmail.com";
+        $mailto = $_POST["payment"];
         
         $headers = "Club: ".$organization_name;
         $txt = "You have received a confirmation email for a club form.\n\nClub: ".$organization_name."\nPayment: ".$payment."\nAmount: ".$amount."\nReason: ".$reason."\nMember: ".$Individual."\nWhen needed: ".$when."\nDate: ".$date."Comment: ".$comments;

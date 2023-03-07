@@ -6,8 +6,7 @@
         $description = $_POST["description"];
         $location = $_POST["Location"];
         $funds = $_POST["funds"];
-                
-        $mailto = "josphball963@gmail.com";
+        
         $contact = $_POST["contact"];
 
         $headers = "Club: ".$organization_name;

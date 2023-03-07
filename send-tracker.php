@@ -8,7 +8,7 @@
         $organization_name = $_Post["organization_name"];
         $members = $_Post["current_members"];
                 
-        $mailto = "josphball963@gmail.com";
+        $mailto = $_POST["rep"];
 
         $headers = "Club: ".$organization_name;
         $txt = "You have received a confirmation email for a club form.\n\nClub: ".$organization_name."\nCurrent Members: ".$members."\nAttendees: ".$attendees."\nDate and time: ".$datetime."\nMeeting Cost: ".$meetingCost."\nFuture Events: ".$futureEvents;
