@@ -2,10 +2,10 @@
 
     if(isset($_POST['submit'])){
         $datetime = $_POST["date/time"];
-        $attendees = $_Post["attendees"];
-        $meetingCost = $_Post["meeting_cost"];
-        $futureEvents = $_Post["future_events"];
-        $organization_name = $_Post["organization_name"];
+        $attendees = $_POST["attendees"];
+        $meetingCost = $_POST["meeting_cost"];
+        $futureEvents = $_POST["future_events"];
+        $organization_name = $_POST["organization_name"];
         $members = $_Post["current_members"];
                 
         $mailto = $_POST["rep"];

@@ -1,14 +1,14 @@
 <?php
 
     if(isset($_POST['submit'])){
-        $payment = $_Post["payment"];
-        $amount = $_Post["amount"];
-        $reason = $_Post["reason"];
-        $Individual = $_Post["Individual"];
-        $organization_name = $_Post["organization_name"];
-        $when = $_Post["when"];
-        $date = $_Post["date"];
-        $Comments = $_Post["Comments"];
+        $payment = $_POST["payment"];
+        $amount = $POST["amount"];
+        $reason = $POST["reason"];
+        $Individual = $POST["Individual"];
+        $organization_name = $POST["organization_name"];
+        $when = $POST["when"];
+        $date = $POST["date"];
+        $Comments = $_POST["Comments"];
                 
         $mailto = $_POST["payment"];
         
